@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-AESDCHAR_VERSION = f9a59b313a93085cebf02d33f397a0e051b77575
+AESDCHAR_VERSION = 52efb3dbf4ea3c2e351bb83498402c6d19352762
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
