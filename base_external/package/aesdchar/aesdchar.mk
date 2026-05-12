@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-AESDCHAR_VERSION = 52efb3dbf4ea3c2e351bb83498402c6d19352762
+AESDCHAR_VERSION = 137108ad6ceb8755621962adce19087f4a42b635
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -21,6 +21,7 @@ define AESDCHAR_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_unload $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment8-buildroot/drivertest.sh $(TARGET_DIR)/usr/bin
+	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment8-buildroot/sockettest.sh $(TARGET_DIR)/usr/bin
 endef
 
 $(eval $(kernel-module))
